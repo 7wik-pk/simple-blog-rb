@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Showing article</title>
-</head>
-<body>
-    <h2>Title: <%= @article.title %></h2>
-    <p>Description: <%= @article.desc %></p>
-    
-</body>
-</html>
+<h2>Title: <%= @article.title %></h2>
+<p>Description: <%= @article.desc %></p>
+
+<%= link_to 'Edit', edit_article_path(@article) %>
+<%= link_to 'Delete', article_path(@article), method: :delete %>
+<%= link_to 'Return to index', articles_path %>
