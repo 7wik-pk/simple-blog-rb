@@ -1,3 +1,8 @@
+html,
+body {
+    height: 100%;
+    background-color: lightgray;
+}
 
 .navbar {
 
@@ -16,4 +21,25 @@
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: bold;
+}
+
+#home-container {
+    margin-top: 2em;
+    background-image: url("home-jumbo-bg.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30em;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+.sticky-bottom {
+    flex-shrink: none;
+}
+
+.button_to {
+    display: inline;
 }
